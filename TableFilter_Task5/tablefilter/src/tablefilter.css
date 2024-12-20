@@ -1,0 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif; /* A clean, modern font */
+    background-color: #f4f6f9; /* Pastel light gray background */
+    color: #333; /* Dark text for readability */
+    margin: 0;
+    padding: 0;
+
+}
+/* Container for the entire filter component */
+.table-filter-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f8ff; /* Pastel blue background color */
+  }
+  
+  /* Style for the search input and icon */
+  .search-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #ccc; /* Bottom border for the input */
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%; /* Make input field take full width */
+    max-width: 600px; /* Optional: max width for better control */
+    border: none;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-bottom: 2px solid #007BFF;
+}
+
+
+  .search-input input {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  
+  .search-icon {
+    font-size: 20px;
+    color: #888;
+    margin-right: 10px;
+  }
+  
+  /* Table styles */
+  table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Table shadow */
+    border-radius: 30px; /* Rounded corners for the table */
+    border-top: none; 
+    border-bottom: none; 
+    border-left: none; 
+    border-right: none; 
+  }
+  
+  th, td {
+    padding: 12px 20px;
+    text-align: left;
+    border-top: 1px solid #ddd; /* Internal borders only */
+  }
+  
+  thead {
+    background-color: #f7f7f7;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  td {
+    font-size: 14px;
+  }
+  
+  /* Style for the message when no items are found */
+  tr td[colspan="4"] {
+    text-align: center;
+    font-style: italic;
+    color: #555;
+  }
+  table tr:first-child td {
+    border-top: none; /* Remove top border for the first row */
+}
+
+table td:first-child {
+    border-left: none; /* Remove left border for the first column */
+}
+
+table td:last-child {
+    border-right: none; /* Remove right border for the last column */
+}
